@@ -1,0 +1,28 @@
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene id="scene" embedded arjs='sourceType: webcam;'>
+    <a-entity camera></a-entity>
+  </a-scene>
+
+  <script type="text/javascript">
+    const coders = ["67eleven", "bislon", "dash", "godwin", "julia", "kaio", "marco", "mateja", "mosoliman"];
+
+    for (i = 0; i < coders.length; i++) {
+      const pattern = `files/patterns/pattern-${coders[i]}.patt`;
+      const image = `files/photos/${coders[i]}.jpg`;
+      const markerElem = document.createElement("a-marker");
+      const imageElem = document.createElement("a-image");
+
+      markerElem.setAttribute('type', 'pattern');
+      markerElem.setAttribute('url', pattern);
+
+      imageElem.setAttribute('src', image);
+
+      markerElem.appendChild(imageElem);
+      document.querySelector("#scene").prepend(markerElem);
+    }
+  </script>
+</body>
