@@ -14,6 +14,9 @@ The markers can be found [here](https://github.com/DashBarkHuss/ar_fun_with_code
 
 ![screenshot](marker_6-29.PNG)
 
+## Note About Markers
+It seems the more markers you have the more finicky ar.js is. I believe this is because ar.js is trying to decipher between all of the markers. Also the glare on your phone may interfere with the programs ability to clearly "see" the marker.
+
 ## Tutorials for AR.js
 - [Building AR/VR with Javascript and HTML](https://blog.halolabs.io/building-ar-vr-with-javascript-and-html-97af4434bcf6)
 - [Creating Augmented Reality with AR.js and A-Frame](https://aframe.io/blog/arjs/)
