@@ -1,5 +1,5 @@
 # AR Fun With Coders
-This project uses [ar.js](https://github.com/jeromeetienne/AR.js/blob/master/README.md), and augmented reality javascript library. 
+This project uses [ar.js](https://github.com/jeromeetienne/AR.js/blob/master/README.md), anaugmented reality javascript library. 
 
 When shown to the camera, **"markers"** linked to different coders (my coding friends on twitter) will cue the code to display an image of that coder.
 
